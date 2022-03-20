@@ -3,7 +3,7 @@ const { sign, verify } = require("jsonwebtoken");
 const createToken = (user) => {
   const accessToken = sign(
     { username: user.username, id: user.id },
-    //* the secret below should be placed in a .env file
+    // the secret below should be placed in a .env file
     "Ilikevector18"
   );
 

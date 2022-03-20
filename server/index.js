@@ -7,6 +7,8 @@ const bcrypt = require("bcrypt");
 const cookieParser = require("cookie-parser");
 const { createToken, validateToken } = require("./JWT");
 
+const jwt = require("jsonwebtoken");
+
 app.use(express.json());
 app.use(cookieParser());
 
